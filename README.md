@@ -1,5 +1,6 @@
 # GMS2_Controller_Boilerplate
 GMS2 Controller Boilerplate setup. Use in your projects. 
+FYI you can get this all in code-format from [controller.txt](https://github.com/crawsome/GMS2_Controller_Boilerplate/blob/main/controller.txt) in this repo. Read on for the pretty version. 
 
 I made this because:
 * [Yoyo's docs barely get you started, and are often incomplete, and missing examples](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Game_Input/GamePad_Input/Gamepad_Input.htm)
