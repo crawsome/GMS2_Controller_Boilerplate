@@ -1,0 +1,58 @@
+
+// Analog Left Check for 8 different positions (including diagonal)
+al_right_up = (l_horizontal_axis > analog_tolerance && l_vertical_axis < -analog_tolerance) 
+al_right_down = (l_horizontal_axis > analog_tolerance && l_vertical_axis > analog_tolerance)
+al_left_up = (l_horizontal_axis < -analog_tolerance && l_vertical_axis < -analog_tolerance) 
+al_left_down = (l_horizontal_axis < -analog_tolerance && l_vertical_axis > analog_tolerance) 
+al_right = (l_horizontal_axis > analog_tolerance)
+al_left = (l_horizontal_axis < -analog_tolerance) 
+al_up = (l_vertical_axis < -analog_tolerance)
+al_down = (l_vertical_axis > analog_tolerance) 
+al_push = gamepad_button_check_pressed(0,gp_stickl) // L3
+
+// Analog Right Check for 8 different positions (including diagonal)
+ar_right_up = (r_horizontal_axis > analog_tolerance && r_vertical_axis < -analog_tolerance) 
+ar_right_down = (r_horizontal_axis > analog_tolerance && r_vertical_axis > analog_tolerance)
+ar_left_up = (r_horizontal_axis < -analog_tolerance && r_vertical_axis < -analog_tolerance) 
+ar_left_down = (r_horizontal_axis < -analog_tolerance && r_vertical_axis > analog_tolerance) 
+ar_right = (r_horizontal_axis > analog_tolerance)
+ar_left = (r_horizontal_axis < -analog_tolerance) 
+ar_up = (r_vertical_axis < -analog_tolerance)
+ar_down = (r_vertical_axis > analog_tolerance) 
+ar_push = gamepad_button_check_pressed(0,gp_stickr) // R3
+
+// DPAD
+key_dpad_u = gamepad_button_check_pressed(0,gp_padu);
+key_dpad_d = gamepad_button_check_pressed(0,gp_padd);
+key_dpad_l = gamepad_button_check(0,gp_padl);
+key_dpad_r = gamepad_button_check(0,gp_padr);
+
+// FACE BUTTONS
+key_x = gamepad_button_check_pressed(0,gp_face3) // X
+key_y= gamepad_button_check_pressed(0,gp_face4) // Y
+key_b = gamepad_button_check_pressed(0,gp_face2); // B
+key_a = gamepad_button_check_pressed(0,gp_face1); // A
+
+// FACE BUTTONS OFF
+key_x_off = gamepad_button_check_released(0,gp_face3) // X
+key_y_off = gamepad_button_check_released(0,gp_face4) // Y
+key_b_off = gamepad_button_check_released(0,gp_face2); // B
+key_a_off = gamepad_button_check_released(0,gp_face1); // A
+
+// SHOULDER 
+key_l1 = gamepad_button_check_pressed(0,gp_shoulderl); // L1
+key_r1 = gamepad_button_check_pressed(0,gp_shoulderr); // R1
+key_l2 = gamepad_button_check_pressed(0,gp_shoulderlb); // L2
+key_r2 = gamepad_button_check_pressed(0,gp_shoulderrb); // R2
+
+// SHOULDER OFF
+key_l1_off = gamepad_button_check_released(0,gp_shoulderl); // L1
+key_r1_off = gamepad_button_check_released(0,gp_shoulderr); // R1
+key_l2_off = gamepad_button_check_released(0,gp_shoulderlb); // L2
+key_r2_off = gamepad_button_check_released(0,gp_shoulderrb); // R2
+
+// SELECT/START
+key_select = gamepad_button_check_pressed(0,gp_select)
+key_start = gamepad_button_check_pressed(0,gp_start)
+
+//and dont even think of mapping the crap X button, Microsoft's invasive branding experience has ruined that button. 
